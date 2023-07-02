@@ -13,7 +13,7 @@
     <br />
     <br />
     <!--добавить метки нужным полям-->
-    <a href="https://github.com/mireaMegaman/translate/tree/main/docs"><mark>Изучите документацию здесь</mark></a> 
+    <a href="https://github.com/whatisslove11/translator-app/tree/main/documentation"><mark>Изучите документацию здесь</mark></a> 
     <br />
     <a href="https://github.com/whatisslove11/hse-proj/issues">Сообщить об ошибке</a>
     ·
@@ -26,9 +26,11 @@
 ## Files
 
 - `app.py` - streamlit app file
-- `model.py`: script for generating the Transformer model
+- `decode.py`: script for normalizing text and future translation
 - `model.pt`: weights for Transformer model
 - `requirements.txt`: package requirements files
+- `en_dict.pkl` and `de_dict.pkl`: dictionaries for translation
+- `model` dir: modules for Translation model
 
 <p align="right">(<a href="#readme-top"><i>Вернуться наверх</i></a>)</p>
 

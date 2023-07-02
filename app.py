@@ -6,6 +6,9 @@ from decode import decode
 
 
 def sidebar():
+    tg_url = 'https://t.me/whatisslove7'
+    gh_url = 'https://github.com/whatisslove11'
+    repo_url = 'https://github.com/whatisslove11/translator-app'
     with st.sidebar:
         st.markdown(
             "## Руководство по использованию:\n"
@@ -30,7 +33,9 @@ def sidebar():
         )
         st.markdown("---")
         st.markdown("# Контакты:")
-
+        st.markdown("Telegram: [click](%s)" % tg_url)
+        st.markdown("Author's GitHub: [click](%s)" % gh_url)
+        st.markdown("GitHub repo: [click](%s)" % repo_url)
 
 def clear_submit():
     st.session_state["submit"] = False

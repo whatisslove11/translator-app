@@ -3,17 +3,13 @@ import torch
 from unidecode import unidecode
 import nltk
 
-nltk.download('wordnet')
-nltk.download('omw-1.4')
-
 tokenizer = nltk.WordPunctTokenizer()
-lemmatizer = nltk.WordNetLemmatizer()
 
 
 def tokenize_pipeline(sentence):
     sentence = sentence.lower()
     tokens = tokenizer.tokenize(sentence)
-    return [lemmatizer.lemmatize(token) for token in tokens]
+    return [token for token in tokens]
 
 
 def decode(src, model, word2index, index2word, max_len=128):
